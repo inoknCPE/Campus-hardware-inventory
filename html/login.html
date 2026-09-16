@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Sign in | Campus Hardware Inventory{% endblock %}
+{% block content %}
+<div class="auth-wrap"><div class="auth-card">
+    <p class="eyebrow">Equipment desk</p><h1>Sign in</h1><p class="muted">Access inventory, borrowing, and approval tools.</p>
+    <form method="post" action="{{ url_for('login') }}" class="grid">
+        <label>Username<input name="username" value="{{ locked_username|default('') }}" required autofocus autocomplete="username"></label>
+        <label>Password<span class="password-field"><input id="login-password" type="password" name="password" required autocomplete="current-password"><button class="password-toggle" type="button" aria-controls="login-password" aria-label="Show password" title="Show password"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" fill="none" stroke="currentColor" stroke-width="1.8"></path><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle></svg></button></span></label>
+        <button type="submit">Sign in</button>
+    </form>
+    <p><a href="{{ url_for('register') }}">Create an account</a> · <a href="{{ url_for('reset_request') }}">Reset password</a></p>
+</div></div>
+{% endblock %}

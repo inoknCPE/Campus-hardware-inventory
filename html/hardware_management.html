@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Hardware Management | Campus Hardware Inventory{% endblock %}
+{% block content %}
+<section><p class="eyebrow">Administrative Controls</p><h1>Hardware Management</h1><p class="muted">Add or remove catalog items.</p></section>
+<section class="panel">
+    <form method="post" action="{{ url_for('admin_add') }}" class="toolbar">
+        <label>Item name<input name="item_name" required></label><label>Category<input name="category" required></label><label>Quantity<input type="number" name="quantity" min="0" required></label><label>Unit price<input type="number" name="unit_price" min="0" step="0.01" required></label><button type="submit">Add item</button>
+    </form>
+</section>
+<section class="panel section">
+    <form method="post" action="{{ url_for('admin_delete') }}"><div class="table-wrap"><table><thead><tr><th>Select</th><th>Item</th><th>Category</th><th>Quantity</th><th>Status</th></tr></thead><tbody>{% for item in items %}<tr><td><input type="checkbox" name="item_ids" value="{{ item[0] }}"></td><td>{{ item[1] }}</td><td>{{ item[2] }}</td><td>{{ item[3] }}</td><td>{{ item[5] }}</td></tr>{% else %}<tr><td colspan="5" class="muted">No hardware has been added.</td></tr>{% endfor %}</tbody></table></div><button class="danger" type="submit">Delete selected</button></form>
+</section>
+{% endblock %}

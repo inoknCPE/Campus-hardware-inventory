@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}My Account | Campus Hardware Inventory{% endblock %}
+{% block content %}
+<section><p class="eyebrow">Account</p><h1>My Account</h1><p class="muted">View your account details and update your password.</p></section>
+<section class="panel section"><h2>Account details</h2><dl><dt>Username</dt><dd>{{ session.username }}</dd><dt>Email</dt><dd>{{ session.email }}</dd><dt>Role</dt><dd>{{ session.role|title }}</dd></dl></section>
+<section class="panel section"><h2>Reset password</h2><form method="post" action="{{ url_for('change_password') }}" class="toolbar"><label>Current password<span class="password-field"><input id="current-password" type="password" name="old_password" required></span></label><label>New password<span class="password-field"><input id="new-password" type="password" name="new_password" required minlength="8"></span></label><button type="submit">Change password</button></form></section>
+{% endblock %}

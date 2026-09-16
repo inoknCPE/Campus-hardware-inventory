@@ -1,0 +1,861 @@
+2026-08-20 08:11:23 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:13:39 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:18:54 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:21:33 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:25:23 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:25:50 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:27:37 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:28:26 - [INFO] - AppLogger - Account created: 'Admin'
+2026-08-20 08:28:36 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:30:57 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:31:06 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:31:39 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-08-20 08:31:52 - [INFO] - AppLogger - Account created: 'Gino'
+2026-08-20 08:32:02 - [INFO] - AppLogger - User 'Gino' logged in.
+2026-08-20 08:32:52 - [INFO] - AppLogger - User 'Gino' logged out.
+2026-08-20 08:32:59 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:34:04 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:34:14 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:34:26 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-08-20 08:34:53 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:44:44 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:44:51 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:45:00 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-08-20 08:45:13 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:45:33 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:45:40 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-08-20 08:47:54 - [INFO] - AppLogger - Password reset request created for user 'Gino'
+2026-08-20 08:48:24 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:49:03 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:49:43 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:49:50 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:51:58 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:52:12 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:52:37 - [INFO] - AppLogger - New inventory item added: 'Arduino'
+2026-08-20 08:52:55 - [INFO] - AppLogger - New inventory item added: 'Raspberry Pi 5'
+2026-08-20 08:53:07 - [INFO] - AppLogger - New inventory item added: 'LED'
+2026-08-20 08:53:18 - [INFO] - AppLogger - New inventory item added: 'Breadboard'
+2026-08-20 08:53:35 - [INFO] - AppLogger - New inventory item added: 'Power Supply'
+2026-08-20 08:53:42 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-08-20 08:53:49 - [INFO] - AppLogger - User 'Gino' logged in.
+2026-08-20 08:53:53 - [INFO] - AppLogger - User 'Gino' logged out.
+2026-08-20 08:55:14 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 08:55:30 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-08-20 08:56:41 - [INFO] - AppLogger - Quantity updated for item ID 1 to 9
+2026-08-20 08:57:17 - [INFO] - AppLogger - Inventory exported to CSV: C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab5\inventory_report.csv
+2026-08-20 08:58:09 - [INFO] - AppLogger - Quantity updated for item ID 1 to 0
+2026-08-20 08:58:14 - [INFO] - AppLogger - Inventory exported to CSV: C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab5\inventory_report.csv
+2026-08-20 08:59:03 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-08-20 08:59:10 - [INFO] - AppLogger - User 'Gino' logged in.
+2026-08-20 09:02:02 - [INFO] - AppLogger - Database initialized successfully.
+2026-08-20 09:02:10 - [INFO] - AppLogger - User 'Gino' logged in.
+2026-08-20 09:02:26 - [WARNING] - AppLogger - Password change validation failed for 'Gino': Value error, Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.
+2026-08-20 09:02:44 - [WARNING] - AppLogger - Password change validation failed for 'Gino': Value error, Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.
+2026-08-20 09:03:42 - [INFO] - AppLogger - User 'Gino' logged out.
+2026-08-20 09:04:09 - [INFO] - AppLogger - Password reset request created for user 'Gino'
+2026-08-20 09:04:18 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-03 08:56:23 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 08:56:23 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 08:57:19 - [WARNING] - AppLogger - Registration validation failed for 'Gino16!': Value error, Username must contain only letters, numbers, and underscores.
+2026-09-03 08:57:22 - [WARNING] - AppLogger - Registration validation failed for 'Gino16!': Value error, Username must contain only letters, numbers, and underscores.
+2026-09-03 08:57:29 - [WARNING] - AppLogger - Registration validation failed for 'Gino16': String should have at least 8 characters
+2026-09-03 08:57:36 - [INFO] - AppLogger - Account created: 'Gino16'
+2026-09-03 08:57:43 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 08:59:54 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:01:03 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:03:40 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:17:25 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:17:25 - [INFO] - AppLogger - New inventory item added: 'Projector'
+2026-09-03 09:17:35 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:17:35 - [INFO] - AppLogger - New inventory item added: 'Projector'
+2026-09-03 09:18:03 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:18:11 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:19:39 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:19:46 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:20:24 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:20:31 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:26:32 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:26:32 - [INFO] - AppLogger - New inventory item added: 'Camera'
+2026-09-03 09:27:22 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:27:40 - [INFO] - AppLogger - Account created: 'Admin16'
+2026-09-03 09:27:48 - [INFO] - AppLogger - User 'Admin16' logged in.
+2026-09-03 09:28:18 - [INFO] - AppLogger - User 'Admin16' logged out.
+2026-09-03 09:28:24 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:29:25 - [INFO] - AppLogger - User 'Gino16' logged out.
+2026-09-03 09:29:30 - [INFO] - AppLogger - User 'Admin16' logged in.
+2026-09-03 09:31:48 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:31:48 - [INFO] - AppLogger - New inventory item added: 'Laptop'
+2026-09-03 09:32:06 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:32:12 - [INFO] - AppLogger - User 'Admin16' logged in.
+2026-09-03 09:33:43 - [INFO] - AppLogger - User 'Admin16' logged out.
+2026-09-03 09:33:49 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:34:12 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:34:19 - [INFO] - AppLogger - User 'Admin16' logged in.
+2026-09-03 09:34:41 - [INFO] - AppLogger - User 'Admin16' logged out.
+2026-09-03 09:35:06 - [INFO] - AppLogger - Account created: 'Admin166'
+2026-09-03 09:35:25 - [INFO] - AppLogger - User 'Admin166' logged in.
+2026-09-03 09:35:43 - [INFO] - AppLogger - User 'Admin166' logged out.
+2026-09-03 09:36:01 - [INFO] - AppLogger - Account created: 'admin'
+2026-09-03 09:36:18 - [INFO] - AppLogger - User 'admin' logged in.
+2026-09-03 09:36:49 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:36:50 - [INFO] - AppLogger - Account created: 'admin_test'
+2026-09-03 09:37:01 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:37:08 - [INFO] - AppLogger - User 'Admin166' logged in.
+2026-09-03 09:37:40 - [INFO] - AppLogger - User 'Admin166' logged out.
+2026-09-03 09:38:13 - [INFO] - AppLogger - Password reset request created for user 'Admin'
+2026-09-03 09:38:50 - [INFO] - AppLogger - Account created: 'Adminn'
+2026-09-03 09:38:59 - [INFO] - AppLogger - User 'Adminn' logged in.
+2026-09-03 09:40:10 - [INFO] - AppLogger - User 'Adminn' logged out.
+2026-09-03 09:40:20 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-03 09:41:37 - [INFO] - AppLogger - New inventory item added: '5ohm Resistor'
+2026-09-03 09:41:43 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-09-03 09:41:53 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:42:23 - [INFO] - AppLogger - User 'Gino16' logged out.
+2026-09-03 09:42:29 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-03 09:44:54 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:45:02 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:46:00 - [INFO] - AppLogger - User 'Gino16' logged out.
+2026-09-03 09:46:09 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-03 09:53:26 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-09-03 09:53:33 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:54:20 - [INFO] - AppLogger - Quantity updated for item ID 6 to 1000
+2026-09-03 09:54:26 - [INFO] - AppLogger - Quantity updated for item ID 6 to 100
+2026-09-03 09:55:57 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-03 09:56:04 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 09:56:53 - [INFO] - AppLogger - User 'Gino16' logged out.
+2026-09-03 09:56:58 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-03 09:57:10 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-09-03 09:57:17 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 10:04:08 - [INFO] - AppLogger - User 'Gino16' logged out.
+2026-09-03 10:04:14 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-03 10:04:41 - [INFO] - AppLogger - New inventory item added: 'Dupont Wires'
+2026-09-03 10:04:57 - [INFO] - AppLogger - New inventory item added: 'DC Motor'
+2026-09-03 10:05:09 - [INFO] - AppLogger - New inventory item added: 'Servo Motor'
+2026-09-03 10:05:20 - [INFO] - AppLogger - New inventory item added: 'Stepper Motor'
+2026-09-03 10:05:26 - [INFO] - AppLogger - User 'Admin' logged out.
+2026-09-03 10:05:34 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-03 10:11:40 - [INFO] - AppLogger - User 'Gino16' logged out.
+2026-09-03 10:11:46 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 14:52:41 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 14:53:23 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 15:31:58 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:31:58 - [INFO] - AppLogger - New inventory item added: 'Arduino Uno'
+2026-09-11 15:33:44 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:33:44 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 15:33:44 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 15:33:44 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 15:33:45 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:33:45 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 15:33:45 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 15:33:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:33:57] "GET / HTTP/1.1" 302 -
+2026-09-11 15:39:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:39:42] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:39:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:39:47] "GET /register HTTP/1.1" 200 -
+2026-09-11 15:39:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:39:51] "GET /reset-request HTTP/1.1" 200 -
+2026-09-11 15:39:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:39:55] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 15:40:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:11] "GET / HTTP/1.1" 302 -
+2026-09-11 15:40:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:11] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:40:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:11] "GET /register HTTP/1.1" 200 -
+2026-09-11 15:40:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:11] "GET /reset-request HTTP/1.1" 200 -
+2026-09-11 15:40:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:11] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 15:40:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:20] "GET / HTTP/1.1" 302 -
+2026-09-11 15:40:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:40:20] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 15:40:44 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:40:44 - [INFO] - AppLogger - Account created: 'check_user'
+2026-09-11 15:41:04 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:41:04 - [INFO] - AppLogger - New inventory item added: 'Test Board'
+2026-09-11 15:41:44 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:41:45 - [INFO] - AppLogger - Account created: 'valid_user'
+2026-09-11 15:41:45 - [INFO] - AppLogger - User 'valid_user' logged in.
+2026-09-11 15:41:45 - [INFO] - AppLogger - New inventory item added: 'Filtered Board'
+2026-09-11 15:41:45 - [INFO] - AppLogger - New inventory item added: 'Filtered Cable'
+2026-09-11 15:42:27 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:42:27 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 15:42:27 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 15:42:27 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 15:42:27 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:42:27 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 15:42:27 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 15:42:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:42:35] "GET / HTTP/1.1" 302 -
+2026-09-11 15:42:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:42:35] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:42:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:42:35] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 15:42:51 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 15:42:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:42:51] "POST /login HTTP/1.1" 302 -
+2026-09-11 15:42:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:42:51] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:43:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:43:13] "GET /dashboard?search=&category=ALL HTTP/1.1" 200 -
+2026-09-11 15:43:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:43:15] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:43:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:43:17] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:44:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:44:32] "GET /logout HTTP/1.1" 302 -
+2026-09-11 15:44:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:44:32] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:44:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:44:36] "POST /login HTTP/1.1" 200 -
+2026-09-11 15:44:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:44:40] "POST /login HTTP/1.1" 200 -
+2026-09-11 15:44:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:44:44] "POST /login HTTP/1.1" 200 -
+2026-09-11 15:44:59 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:44:59] "GET /register HTTP/1.1" 200 -
+2026-09-11 15:45:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:04] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:45:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:08] "GET /register HTTP/1.1" 200 -
+2026-09-11 15:45:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:13] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:45:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:14] "GET /reset-request HTTP/1.1" 200 -
+2026-09-11 15:45:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:19] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:45:23 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 15:45:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:23] "POST /login HTTP/1.1" 302 -
+2026-09-11 15:45:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:24] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:45:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:42] "POST /admin/reset-action HTTP/1.1" 302 -
+2026-09-11 15:45:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:42] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:45:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:50] "GET /dashboard?search=mot&category=ALL HTTP/1.1" 200 -
+2026-09-11 15:45:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:45:53] "GET /dashboard?search=Dc&category=ALL HTTP/1.1" 200 -
+2026-09-11 15:46:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:46:00] "GET /dashboard?search=&category=ALL HTTP/1.1" 200 -
+2026-09-11 15:46:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:46:02] "GET /dashboard?search=&category=Diode HTTP/1.1" 200 -
+2026-09-11 15:46:09 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:46:09] "GET /dashboard?search=&category=Diode HTTP/1.1" 200 -
+2026-09-11 15:46:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:46:12] "GET /dashboard?search=&category=ALL HTTP/1.1" 200 -
+2026-09-11 15:47:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:47:48] "GET /logout HTTP/1.1" 302 -
+2026-09-11 15:47:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:47:48] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:47:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:47:52] "POST /login HTTP/1.1" 200 -
+2026-09-11 15:48:04 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 15:48:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:48:04] "POST /login HTTP/1.1" 302 -
+2026-09-11 15:48:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:48:04] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:48:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:48:12] "POST /return-request HTTP/1.1" 302 -
+2026-09-11 15:48:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:48:12] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:48:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:48:54] "POST /borrow HTTP/1.1" 302 -
+2026-09-11 15:48:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:48:54] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:50:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:50:52] "GET /logout HTTP/1.1" 302 -
+2026-09-11 15:50:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:50:52] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:51:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:51:33] "GET /register HTTP/1.1" 200 -
+2026-09-11 15:51:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:51:35] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:51:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:51:36] "GET /reset-request HTTP/1.1" 200 -
+2026-09-11 15:51:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:51:40] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:53:29 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:53:29 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 15:53:29 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 15:53:29 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 15:53:29 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:53:29 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 15:53:29 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 15:53:54 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:53:55 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 15:53:55 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 15:53:55 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 15:53:55 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 15:53:55 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 15:53:55 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 15:54:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:01] "GET / HTTP/1.1" 302 -
+2026-09-11 15:54:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:01] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:54:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:19] "GET /register HTTP/1.1" 200 -
+2026-09-11 15:54:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:26] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:54:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:29] "GET /reset-request HTTP/1.1" 200 -
+2026-09-11 15:54:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:31] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:54:38 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 15:54:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:38] "POST /login HTTP/1.1" 302 -
+2026-09-11 15:54:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:54:38] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:55:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:55:57] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:55:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:55:58] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 15:56:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:56:17] "GET /logout HTTP/1.1" 302 -
+2026-09-11 15:56:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:56:17] "GET /login HTTP/1.1" 200 -
+2026-09-11 15:56:22 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 15:56:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:56:22] "POST /login HTTP/1.1" 302 -
+2026-09-11 15:56:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 15:56:22] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 16:10:48 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:10:48 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 16:10:48 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 16:10:48 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:10:49 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:10:49 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:10:49 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 16:10:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:10:55] "GET / HTTP/1.1" 302 -
+2026-09-11 16:10:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:10:55] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 16:10:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:10:55] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 16:11:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:00] "GET / HTTP/1.1" 302 -
+2026-09-11 16:11:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:00] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 16:11:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:00] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 16:11:10 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:10] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 16:11:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:11] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 16:11:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:12] "GET /hardware-management HTTP/1.1" 200 -
+2026-09-11 16:11:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:11:14] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 16:20:20 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\controllers\\tracker_controller.py', reloading
+2026-09-11 16:20:20 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:20:21 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:20:21 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:20:21 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 16:20:33 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\app.py', reloading
+2026-09-11 16:20:33 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:20:33 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:20:33 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:20:33 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 16:20:37 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\app.py', reloading
+2026-09-11 16:20:37 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:20:37 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:20:37 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:20:37 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 16:21:19 - [INFO] - AppLogger - New inventory item added: 'Arduino Uno'
+2026-09-11 16:21:19 - [INFO] - AppLogger - New inventory item added: 'Raspberry Pi'
+2026-09-11 16:23:35 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\app.py', reloading
+2026-09-11 16:23:35 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:23:36 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:23:36 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:23:36 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 16:23:39 - [INFO] - AppLogger - New inventory item added: 'Arduino Uno'
+2026-09-11 16:23:39 - [INFO] - AppLogger - New inventory item added: 'Raspberry Pi'
+2026-09-11 16:23:48 - [ERROR] - app - Exception on /borrowing-returns [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\app.py", line 81, in wrapped
+    return view(*args, **kwargs)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\app.py", line 529, in borrowing_returns
+    return render_template(
+        "borrowing_returns.html",
+    ...<3 lines>...
+        history=InventoryController.get_request_summaries(),
+    )
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\html\borrowing_returns.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\html\base.html", line 73, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\html\borrowing_returns.html", line 13, in block 'content'
+    <section class="panel section"><h2>Borrowing History</h2><div class="table-wrap"><table><thead><tr><th>Request ID</th><th>User</th><th>Hardware</th><th>Date</th><th>Status</th></tr></thead><tbody>{% for request in history %}<tr><td>{% if admin %}BR{% else %}BR{% endif %}{{ '%03d'|format(request.request_id) }}</td><td>{{ request.student_name }}</td><td>{% for item in request.items %}{{ item.name }} × {{ item.quantity }}{% if not loop.last %}, {% endif %}{% endfor %}</td><td>{{ request.borrow_date }}</td><td>{{ request.status|replace('_', ' ')|title }}</td></tr>{% else %}<tr><td colspan="5" class="muted">No borrowing history.</td></tr>{% endfor %}</tbody></table></div></section>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\runtime.py", line 424, in __init__
+    self._iterator = self._to_iterator(iterable)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\runtime.py", line 432, in _to_iterator
+    return iter(iterable)
+TypeError: 'builtin_function_or_method' object is not iterable
+2026-09-11 16:23:56 - [ERROR] - app - Exception on /borrowing-returns [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\app.py", line 81, in wrapped
+    return view(*args, **kwargs)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\app.py", line 529, in borrowing_returns
+    return render_template(
+        "borrowing_returns.html",
+    ...<3 lines>...
+        history=InventoryController.get_request_summaries(),
+    )
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\html\borrowing_returns.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\html\base.html", line 73, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\html\borrowing_returns.html", line 13, in block 'content'
+    <section class="panel section"><h2>Borrowing History</h2><div class="table-wrap"><table><thead><tr><th>Request ID</th><th>User</th><th>Hardware</th><th>Date</th><th>Status</th></tr></thead><tbody>{% for request in history %}<tr><td>{% if admin %}BR{% else %}BR{% endif %}{{ '%03d'|format(request.request_id) }}</td><td>{{ request.student_name }}</td><td>{% for item in request.items %}{{ item.name }} × {{ item.quantity }}{% if not loop.last %}, {% endif %}{% endfor %}</td><td>{{ request.borrow_date }}</td><td>{{ request.status|replace('_', ' ')|title }}</td></tr>{% else %}<tr><td colspan="5" class="muted">No borrowing history.</td></tr>{% endfor %}</tbody></table></div></section>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\runtime.py", line 424, in __init__
+    self._iterator = self._to_iterator(iterable)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Ino\OneDrive\Documents\vsCode\soft\lab7\.venv\Lib\site-packages\jinja2\runtime.py", line 432, in _to_iterator
+    return iter(iterable)
+TypeError: 'builtin_function_or_method' object is not iterable
+2026-09-11 16:28:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:28:19] "GET / HTTP/1.1" 302 -
+2026-09-11 16:28:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:28:19] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 16:28:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:28:19] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 16:31:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:31:52] "GET /logout HTTP/1.1" 302 -
+2026-09-11 16:31:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:31:52] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:52:55 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:53:03 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:53:14 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:54:43 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:54:43 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 16:54:43 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 16:54:43 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:54:43 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:54:43 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:54:43 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 16:55:10 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:55:10 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 16:55:10 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 16:55:10 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:55:10 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 16:55:10 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:55:10 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 17:06:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:04] "GET / HTTP/1.1" 302 -
+2026-09-11 17:06:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:04] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:06:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:04] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-09-11 17:06:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:04] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-09-11 17:06:46 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 17:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:46] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:46] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:46] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:46] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:46] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:06:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:49] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:06:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:49] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:06:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:06:49] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:17] "POST /borrow HTTP/1.1" 302 -
+2026-09-11 17:07:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:17] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:07:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:17] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:17] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:07:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:35] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:07:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:35] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:07:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:35] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:07:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:35] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:40 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 17:07:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:40] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:07:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:40] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:07:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:40] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:07:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:40] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:07:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:40] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:46] "GET /hardware-management HTTP/1.1" 200 -
+2026-09-11 17:07:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:46] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:46] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:07:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:47] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:07:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:47] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:07:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:47] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:50] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:07:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:50] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:07:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:50] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:07:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:54] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:07:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:54] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:07:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:54] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:07:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:07:54] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:01] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:01] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:01] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:01] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:04] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:04] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:04] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:04] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:12] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:12] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:12] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:12] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:14] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:14] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:14] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:14] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:16 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:16] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:16 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:16] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:16 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:16] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:18] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:18] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:18] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:18] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:19] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:19] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:19] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:19] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:51] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:51] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:51] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:08:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:51] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:54] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:08:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:54] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:08:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:54] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:08:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:08:54] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:03 - [INFO] - AppLogger - New inventory item added: 'A'
+2026-09-11 17:10:03 - [INFO] - AppLogger - New inventory item added: 'B'
+2026-09-11 17:10:21 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 17:10:21 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-11 17:10:21 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 17:10:21 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:10:21 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 17:10:21 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:10:21 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 17:10:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:25] "GET / HTTP/1.1" 302 -
+2026-09-11 17:10:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:25] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:10:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:25] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:10:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:25] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:25] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:28] "GET /hardware-management HTTP/1.1" 200 -
+2026-09-11 17:10:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:28] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:28] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:31] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:10:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:31] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:31] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:35] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:10:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:35] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:10:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:36] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:36] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:38] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:10:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:38] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:10:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:38] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:38] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:43 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 17:10:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:43] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:10:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:43] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:10:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:43] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:10:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:43] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:10:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:43] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:48] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:10:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:48] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:10:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:10:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:11:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:01] "POST /borrow HTTP/1.1" 302 -
+2026-09-11 17:11:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:01] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:11:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:01] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:11:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:01] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:11:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:44] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:11:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:44] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:11:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:44] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:11:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:44] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:11:48 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 17:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:48] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:48] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:48] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:48] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:11:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:50] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:11:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:50] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:11:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:11:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:54] "GET /borrowing-returns/10 HTTP/1.1" 200 -
+2026-09-11 17:11:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:54] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:11:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:11:54] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:12:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:40] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:12:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:40] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:12:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:40] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:12:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:40] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:12:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:41] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:12:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:41] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:12:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:41] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:12:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:41] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:12:46 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 17:12:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:46] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:12:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:46] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:12:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:46] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:12:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:46] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:12:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:46] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:12:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:50] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:12:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:50] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:12:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:12:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:33] "POST /borrow HTTP/1.1" 302 -
+2026-09-11 17:13:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:33] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:13:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:33] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:33] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:34] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:13:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:34] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:13:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:34] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:34] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:38 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 17:13:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:38] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:13:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:38] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:13:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:38] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:13:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:38] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:38] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:41] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:13:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:41] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:41] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:42] "GET /borrowing-returns/11 HTTP/1.1" 200 -
+2026-09-11 17:13:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:42] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:42] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:52] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-11 17:13:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:52] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:13:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:52] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:13:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:55] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:13:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:55] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:13:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:13:55] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:14:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:14:15] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:14:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:14:15] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:14:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:14:15] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:15:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:46] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:15:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:46] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:15:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:46] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:15:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:46] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:15:51 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 17:15:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:51] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:15:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:51] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:15:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:51] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:15:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:51] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:15:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:51] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:15:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:52] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:15:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:52] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:15:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:15:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:16:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:01] "POST /return-request HTTP/1.1" 302 -
+2026-09-11 17:16:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:01] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:16:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:01] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:16:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:01] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:16:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:02] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:16:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:02] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:16:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:02] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:16:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:03] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:16:07 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 17:16:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:07] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:16:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:07] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:16:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:07] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:16:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:07] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:16:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:07] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:16:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:08] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:16:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:08] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:16:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:08] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:16:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:26] "GET /borrowing-returns/11 HTTP/1.1" 200 -
+2026-09-11 17:16:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:26] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:16:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:26] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:16:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:47] "POST /admin/return-action HTTP/1.1" 302 -
+2026-09-11 17:16:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:47] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:16:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:47] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:16:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:16:47] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:17:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:17:15] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:17:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:17:15] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:17:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:17:15] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:17] "GET /password-reset-requests HTTP/1.1" 200 -
+2026-09-11 17:22:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:17] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:22:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:17] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:23] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:22:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:23] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:22:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:23] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:23] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:22:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:23] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:23] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:22:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:25] "GET /hardware-management HTTP/1.1" 200 -
+2026-09-11 17:22:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:25] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:22:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:25] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:26] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:22:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:26] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:26] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:22:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:27] "GET /password-reset-requests HTTP/1.1" 200 -
+2026-09-11 17:22:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:27] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:27] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:22:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:28] "POST /admin/reset-action HTTP/1.1" 302 -
+2026-09-11 17:22:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:28] "GET /password-reset-requests HTTP/1.1" 200 -
+2026-09-11 17:22:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:28] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:22:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:22:28] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:23:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:52] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:23:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:52] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:23:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:52] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:23:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:23:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:58] "POST /login HTTP/1.1" 200 -
+2026-09-11 17:23:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:58] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:23:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:23:58] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:24:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:02] "POST /login HTTP/1.1" 200 -
+2026-09-11 17:24:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:02] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:24:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:02] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:24:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:03] "POST /login HTTP/1.1" 200 -
+2026-09-11 17:24:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:03] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:24:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:03] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:24:48 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 17:24:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:48] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:24:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:48] "GET /dashboard HTTP/1.1" 302 -
+2026-09-11 17:24:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:48] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:24:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:48] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:24:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:24:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:25:58 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\app.py', reloading
+2026-09-11 17:25:59 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:25:59 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 17:25:59 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:25:59 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 17:26:49 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\app.py', reloading
+2026-09-11 17:26:49 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:26:49 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 17:26:49 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:26:49 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 17:27:35 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\Ino\\OneDrive\\Documents\\vsCode\\soft\\lab7\\app.py', reloading
+2026-09-11 17:27:35 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:27:36 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-11 17:27:36 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:27:36 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-11 17:27:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:48] "GET / HTTP/1.1" 302 -
+2026-09-11 17:27:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:49] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 17:27:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:49] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:27:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:49] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:27:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:53] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:27:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:53] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:27:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:53] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:27:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:55] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:27:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:55] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:27:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:55] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:28:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:38] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:28:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:38] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:28:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:38] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:28:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:38] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:28:43 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 17:28:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:43] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:28:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:43] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 17:28:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:43] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:28:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:43] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:29:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:20] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:29:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:20] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:29:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:20] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:29:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:20] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:29:25 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-11 17:29:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:25] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:29:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:25] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 17:29:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:25] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:29:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:25] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:29:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:26] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:29:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:26] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:29:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:26] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:29:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:28] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:29:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:28] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:29:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:28] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:32:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:42] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:32:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:42] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-09-11 17:32:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:42] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:32:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:43] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:32:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:43] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:32:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:43] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:32:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:44] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:32:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:44] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:32:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:32:44] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:33:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:24] "POST /borrow HTTP/1.1" 302 -
+2026-09-11 17:33:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:24] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:33:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:24] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:33:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:24] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:33:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:34] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:33:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:34] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:33:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:34] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:33:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:41] "POST /borrow HTTP/1.1" 302 -
+2026-09-11 17:33:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:41] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:33:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:41] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:33:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:33:41] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:35:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:38] "POST /return-request HTTP/1.1" 302 -
+2026-09-11 17:35:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:38] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:35:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:38] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:35:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:38] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:35:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:40] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:35:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:40] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:35:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:40] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:35:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:40] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:35:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:44] "POST /login HTTP/1.1" 200 -
+2026-09-11 17:35:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:44] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:35:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:44] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:35:48 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-11 17:35:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:48] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:35:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:48] "GET /dashboard HTTP/1.1" 200 -
+2026-09-11 17:35:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:48] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:35:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:35:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:50] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:35:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:50] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:35:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:35:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:36:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:21] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:36:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:21] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:36:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:21] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:36:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:50] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-11 17:36:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:50] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:36:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:36:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:51] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-11 17:36:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:52] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:36:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:36:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:37:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:37:12] "GET /password-reset-requests HTTP/1.1" 200 -
+2026-09-11 17:37:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:37:12] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:37:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:37:12] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-11 17:44:59 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:44:59] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:44:59 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:44:59] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:44:59 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:44:59] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-11 17:44:59 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:44:59] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:29:04 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-17 07:29:05 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-17 07:29:05 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-17 07:29:05 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-17 07:29:05 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-17 07:29:05 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-17 07:29:05 - [INFO] - werkzeug -  * Debugger PIN: 140-688-035
+2026-09-17 07:29:39 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:29:39] "GET / HTTP/1.1" 302 -
+2026-09-17 07:29:39 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:29:39] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:29:39 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:29:39] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:29:39 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:29:39] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-09-17 07:30:56 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-17 07:30:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:56] "POST /login HTTP/1.1" 302 -
+2026-09-17 07:30:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:56] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 07:30:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:56] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:30:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:56] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:30:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:59] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-17 07:30:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:59] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:30:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:30:59] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:31:02 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:02] "GET /logout HTTP/1.1" 302 -
+2026-09-17 07:31:02 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:02] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:31:02 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:02] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:31:02 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:02] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:31:07 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:07] "POST /login HTTP/1.1" 200 -
+2026-09-17 07:31:07 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:07] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:31:07 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:07] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:31:14 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-17 07:31:14 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:14] "POST /login HTTP/1.1" 302 -
+2026-09-17 07:31:14 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:14] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 07:31:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:15] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:31:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:15] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:31:20 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:20] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-17 07:31:20 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:20] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:31:20 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:20] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:31:25 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:25] "GET /logout HTTP/1.1" 302 -
+2026-09-17 07:31:25 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:25] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:31:25 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:25] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:31:25 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:31:25] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:37:26 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:26] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:37:26 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:26] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:37:26 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:26] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:37:52 - [INFO] - AppLogger - User 'Gino16' logged in.
+2026-09-17 07:37:52 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:52] "POST /login HTTP/1.1" 302 -
+2026-09-17 07:37:52 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:52] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 07:37:52 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:37:52 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:52] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:37:57 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:57] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-17 07:37:57 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:57] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:37:57 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:57] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:37:58 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:58] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-17 07:37:58 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:58] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:37:58 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:58] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:37:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:59] "GET /logout HTTP/1.1" 302 -
+2026-09-17 07:37:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:59] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:37:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:59] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:37:59 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:37:59] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:38:04 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:04] "POST /login HTTP/1.1" 200 -
+2026-09-17 07:38:04 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:04] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:38:04 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:04] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:38:11 - [INFO] - AppLogger - User 'Admin' logged in.
+2026-09-17 07:38:11 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:11] "POST /login HTTP/1.1" 302 -
+2026-09-17 07:38:11 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:11] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 07:38:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:12] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:38:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:12] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:38:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:15] "GET /hardware-catalog HTTP/1.1" 200 -
+2026-09-17 07:38:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:15] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:38:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:15] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:38:17 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:17] "GET /borrowing-returns HTTP/1.1" 200 -
+2026-09-17 07:38:17 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:17] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:38:17 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:38:17] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-17 07:44:07 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-17 07:44:07 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-17 07:44:07 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-17 07:44:07 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-17 07:44:07 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-17 07:44:07 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-17 07:44:07 - [INFO] - werkzeug -  * Debugger PIN: 460-250-633
+2026-09-17 07:44:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:12] "GET / HTTP/1.1" 302 -
+2026-09-17 07:44:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:12] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 07:44:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-09-17 07:44:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:12] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-09-17 07:44:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:15] "GET /logout HTTP/1.1" 302 -
+2026-09-17 07:44:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:15] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:44:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:15] "GET /static/css/styles.css HTTP/1.1" 304 -
+2026-09-17 07:44:15 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:15] "GET /static/js/app.js HTTP/1.1" 304 -

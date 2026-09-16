@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Hardware Catalog | Campus Hardware Inventory{% endblock %}
+{% block content %}
+<section>
+    <p class="eyebrow">Inventory</p>
+    <h1>{% if session.role == 'ADMIN' %}Admin Hardware Catalog{% else %}User Hardware Catalog{% endif %}</h1>
+    <p class="muted">View available hardware and stock levels.</p>
+</section>
+<section class="grid stats">
+    <div class="panel stat"><span class="muted">Total Stocks</span><strong>{{ total_stocks }}</strong><span class="muted">units in inventory</span></div>
+    <div class="panel stat"><span class="muted">Account Role</span><strong>{{ session.role|title }}</strong><span class="muted">current access level</span></div>
+    {% if session.role == 'ADMIN' %}<div class="panel stat"><span class="muted">Admin workspace</span><strong>Active</strong><span class="muted">manage inventory and requests</span></div>{% else %}<div class="panel stat"><span class="muted">Borrowing workspace</span><strong>Ready</strong><span class="muted">request equipment from Borrowing &amp; Returns</span></div>{% endif %}
+</section>
+<section class="panel">
+    <div class="toolbar">
+        <form method="get" action="{{ url_for('hardware_catalog') }}" class="toolbar" style="flex:1">
+            <label>Search<input name="search" value="{{ search }}" placeholder="Item name"></label>
+            <label>Category<select name="category"><option value="ALL">All categories</option>{% for category in categories %}<option value="{{ category }}" {% if selected_category|lower == category|lower %}selected{% endif %}>{{ category }}</option>{% endfor %}</select></label>
+            <button type="submit">Filter inventory</button>
+        </form>
+        <a class="button secondary" href="{{ url_for('export') }}">Export CSV</a>
+    </div>
+    <div class="table-wrap"><table>
+        <thead><tr><th>ID</th><th>Item</th><th>Category</th><th>Quantity</th><th>Unit price</th><th>Status</th></tr></thead>
+        <tbody>{% for item in items %}<tr><td>{{ item[0] }}</td><td><strong>{{ item[1] }}</strong></td><td>{{ item[2] }}</td><td>{{ item[3] }}</td><td>${{ '%.2f'|format(item[4]) }}</td><td>{{ item[5] }}</td></tr>{% else %}<tr><td colspan="6" class="muted">No inventory items match this view.</td></tr>{% endfor %}</tbody>
+    </table></div>
+</section>
+{% endblock %}

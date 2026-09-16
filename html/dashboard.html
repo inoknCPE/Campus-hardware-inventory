@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | Campus Hardware Inventory{% endblock %}
+{% block content %}
+<section>
+    <p class="eyebrow">Dashboard</p>
+    <h1>{% if session.role == 'ADMIN' %}Admin Dashboard{% else %}User Dashboard{% endif %}</h1>
+    <p class="muted">Signed in as <strong>{{ session.username }}</strong>.</p>
+</section>
+
+<section class="grid stats">
+    <div class="panel stat"><span class="muted">Total Stocks</span><strong>{{ total_stocks }}</strong><span class="muted">units in inventory</span></div>
+    <div class="panel stat"><span class="muted">Account Role</span><strong>{{ session.role|title }}</strong><span class="muted">current access level</span></div>
+    <div class="panel stat"><span class="muted">Borrowed Items</span><strong>{{ borrowed_items }}</strong><span class="muted">items currently borrowed</span></div>
+    <div class="panel stat"><span class="muted">Pending Borrow Requests</span><strong>{{ pending_borrow_requests|length }}</strong><span class="muted">awaiting review</span></div>
+</section>
+
+{% if session.role == 'ADMIN' %}
+<section class="grid section" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="panel"><h2>Pending Returns</h2><p class="muted">Admin approval panel</p><ul>{% for request in pending_returns %}<li>RR{{ '%03d'|format(request.request_id) }} · {{ request.student_name }} · {{ request.item_count }} item{% if request.item_count != 1 %}s{% endif %}</li>{% else %}<li class="muted">No pending returns.</li>{% endfor %}</ul><a class="button" href="{{ url_for('borrowing_returns') }}">Review borrowing &amp; returns</a></div>
+    <div class="panel"><h2>Password Reset Requests</h2><p class="muted">Admin approval panel</p><p><strong>{{ pending_resets|length }}</strong> request{% if pending_resets|length != 1 %}s{% endif %} awaiting review.</p><a class="button" href="{{ url_for('password_reset_requests') }}">Review password resets</a></div>
+</section>
+<section class="panel section"><h2>Borrow Audit</h2><div class="table-wrap"><table><thead><tr><th>Request ID</th><th>User</th><th>Hardware</th><th>Date</th><th>Status</th></tr></thead><tbody>{% for request in history %}<tr><td>BR{{ '%03d'|format(request.request_id) }}</td><td>{{ request.student_name }}</td><td>{% for item in request['items'] %}{{ item.name }} × {{ item.quantity }}{% if not loop.last %}, {% endif %}{% endfor %}</td><td>{{ request.borrow_date }}</td><td>{{ request.status|replace('_', ' ')|title }}</td></tr>{% else %}<tr><td colspan="5" class="muted">No borrowing history.</td></tr>{% endfor %}</tbody></table></div></section>
+{% else %}
+<section class="grid section" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="panel"><h2>Pending Returns</h2><p class="muted">Your return requests</p><p><strong>{{ user_pending_returns|length }}</strong> request{% if user_pending_returns|length != 1 %}s{% endif %} awaiting admin review.</p><a class="button" href="{{ url_for('borrowing_returns') }}">Open borrowing &amp; returns</a></div>
+    <div class="panel"><h2>My Borrow History</h2><p class="muted">{{ history|length }} borrowing request{% if history|length != 1 %}s{% endif %} recorded.</p><a class="button" href="{{ url_for('borrowing_returns') }}">View history</a></div>
+</section>
+{% endif %}
+
+<section class="panel section"><h2>Quick access</h2><a class="button secondary" href="{{ url_for('hardware_catalog') }}">Hardware Catalog</a>{% if session.role == 'USER' %} <a class="button" href="{{ url_for('my_account') }}">My Account</a>{% else %} <a class="button" href="{{ url_for('hardware_management') }}">Hardware Management</a>{% endif %}</section>
+{% endblock %}

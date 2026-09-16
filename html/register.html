@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Register | Campus Hardware Inventory{% endblock %}
+{% block content %}<div class="auth-wrap"><div class="auth-card">
+    <p class="eyebrow">New account</p><h1>Create an account</h1>
+    <form method="post" action="{{ url_for('register') }}" class="grid">
+        <label>Username<input name="username" required minlength="3" maxlength="20" autocomplete="username"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Role<select name="role"><option value="USER">User</option><option value="ADMIN">Administrator</option></select></label>
+        <label>Password<span class="password-field"><input id="register-password" type="password" name="password" required minlength="8" autocomplete="new-password"><button class="password-toggle" type="button" aria-controls="register-password" aria-label="Show password" title="Show password"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" fill="none" stroke="currentColor" stroke-width="1.8"></path><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle></svg></button></span></label>
+        <button type="submit">Register</button>
+    </form>
+    <p><a href="{{ url_for('login') }}">Back to sign in</a></p>
+</div></div>{% endblock %}
