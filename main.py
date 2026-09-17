@@ -3,6 +3,12 @@ import os
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+DATABASE_URL = os.getenv("DATABASE_URL")
+if DATABASE_URL:
+    print("Using PostgreSQL connection from DATABASE_URL.")
+else:
+    print("DATABASE_URL not set; falling back to local SQLite database.")
+
 try:
     import tkinter as tk
     TKINTER_AVAILABLE = True

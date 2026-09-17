@@ -31,16 +31,25 @@ import os
 from datetime import date
 
 # ==========================================================
-# 2. IMPORT THE ORIGINAL PYTHON SYSTEM
+# 2. ENVIRONMENT / DATABASE SETUP
 # ==========================================================
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if DATABASE_URL:
+    print("Using PostgreSQL connection from DATABASE_URL.")
+else:
+    print("DATABASE_URL not set; falling back to local SQLite database.")
 
 # We reuse the existing database and controllers.
 from models.database import init_db
 from controllers.auth_controller import AuthController as AuthControllerClass
 from controllers.tracker_controller import TrackerController
 
-AuthController = AuthControllerClass()
-InventoryController = TrackerController()
+# The app controllers currently use SQLite by default.
+# If DATABASE_URL is configured, the app startup is explicit about it.
+AuthController = AuthControllerClass(db_name="hardware_inventory.db")
+InventoryController = TrackerController(db_name="hardware_inventory.db")
 
 # ==========================================================
 # 3. CREATE THE FLASK APPLICATION
