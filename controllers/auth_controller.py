@@ -2,7 +2,9 @@ import sqlite3
 import time
 
 import bcrypt
+import psycopg
 from logger import logger
+from models.database import get_db_connection
 from models.schemas import UserRegisterSchema
 from pydantic import ValidationError
 
@@ -24,7 +26,7 @@ class AuthController:
 
         try:
             # use context manager so connection is closed even on exceptions; increase timeout to reduce locking
-            with sqlite3.connect(self.db_name, timeout=10) as conn:
+            with get_db_connection(self.db_name) as conn:
                 cursor = conn.cursor()
                 cursor.execute("INSERT INTO users (username, email, password_hash, role) VALUES (?, ?, ?, ?)", (validated.username, validated.email, hashed_pw.decode('utf-8'), validated.role))
                 conn.commit()
@@ -41,7 +43,7 @@ class AuthController:
 
     def get_lockout_remaining(self, username):
         # Return -1 if account is locked until password reset, 0 otherwise
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT locked FROM users WHERE username = ?", (username,))
             row = cursor.fetchone()
@@ -51,7 +53,7 @@ class AuthController:
         return 0
 
     def _set_user_locked(self, username, locked=True):
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("UPDATE users SET locked = ? WHERE username = ?", (1 if locked else 0, username))
             conn.commit()
@@ -69,7 +71,7 @@ class AuthController:
 
         hashed_pw = bcrypt.hashpw(validated.password.encode('utf-8'), bcrypt.gensalt())
 
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id FROM users WHERE username = ? AND email = ?", (validated.username, validated.email))
             row = cursor.fetchone()
@@ -91,7 +93,7 @@ class AuthController:
         return self.list_reset_requests(status='pending')
 
     def list_reset_requests(self, status=None):
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             if status is None:
                 cursor.execute(
@@ -106,7 +108,7 @@ class AuthController:
         return rows
 
     def approve_reset_request(self, request_id, approve=True):
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT user_id, new_password_hash, status FROM password_reset_requests WHERE id = ?", (request_id,))
             req = cursor.fetchone()
@@ -128,14 +130,14 @@ class AuthController:
                 return True, "Request rejected."
 
     def get_user_role(self, username):
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT role FROM users WHERE username = ?", (username,))
             row = cursor.fetchone()
         return row[0] if row else None
 
     def get_user_info(self, username):
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id, username, email, role, locked FROM users WHERE username = ?", (username,))
             row = cursor.fetchone()
@@ -173,7 +175,7 @@ class AuthController:
             return False, f"Validation error: {e.errors()[0]['msg']}"
 
         new_hashed = bcrypt.hashpw(validated.password.encode('utf-8'), bcrypt.gensalt())
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("UPDATE users SET password_hash = ?, locked = 0 WHERE id = ?", (new_hashed.decode('utf-8'), user_id))
             conn.commit()
@@ -190,7 +192,7 @@ class AuthController:
         if remaining < 0:
             return False, "Account locked. Please reset your password." 
 
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT password_hash, locked FROM users WHERE username = ?", (username,))
             row = cursor.fetchone()

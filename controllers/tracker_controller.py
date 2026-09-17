@@ -2,6 +2,7 @@ import csv
 import sqlite3
 from datetime import date
 from logger import logger
+from models.database import get_db_connection, now_sql
 from models.schemas import InventoryItemSchema
 from pydantic import ValidationError
 
@@ -10,7 +11,7 @@ class TrackerController:
         self.db_name = db_name
 
     def _connect(self):
-        return sqlite3.connect(self.db_name)
+        return get_db_connection(self.db_name)
 
     def get_all_items(self, search_text="", category="ALL"):
         return self.search_items(search_text, category)
@@ -424,7 +425,7 @@ class TrackerController:
                 for item_id, quantity in cursor.fetchall():
                     cursor.execute("UPDATE hardware SET quantity = quantity + ? WHERE item_id = ?", (quantity, item_id))
                     self._update_status(cursor, item_id)
-                cursor.execute("UPDATE borrow_records SET status = 'RETURNED', returned_at = datetime('now') WHERE borrow_id = ?", (borrow_id,))
+                cursor.execute(f"UPDATE borrow_records SET status = 'RETURNED', returned_at = {now_sql()} WHERE borrow_id = ?", (borrow_id,))
                 conn.commit()
             return True, f"Transaction #{borrow_id} returned. Inventory updated."
         except sqlite3.Error as e:
