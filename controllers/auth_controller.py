@@ -32,7 +32,7 @@ class AuthController:
                 conn.commit()
             logger.info(f"Account created: '{validated.username}'")
             return True, "Registration successful! You may now log in."
-        except sqlite3.IntegrityError as e:
+        except (sqlite3.IntegrityError, psycopg.IntegrityError) as e:
             err = str(e).lower()
             # SQLite IntegrityError message often contains the column that violated UNIQUE constraint
             if 'email' in err or 'users.email' in err:
@@ -155,7 +155,7 @@ class AuthController:
         if not username or not old_password or not new_password:
             return False, "All password fields are required."
 
-        with sqlite3.connect(self.db_name, timeout=10) as conn:
+        with get_db_connection(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id, password_hash, email, role FROM users WHERE username = ?", (username,))
             row = cursor.fetchone()

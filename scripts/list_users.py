@@ -1,21 +1,15 @@
-import sqlite3
 import os
 
-db = 'hardware_inventory.db'
-if not os.path.exists(db):
-    print('DB not found:', db)
+import psycopg
+
+
+with psycopg.connect(os.environ["DATABASE_URL"]) as conn:
+    with conn.cursor() as cursor:
+        cursor.execute("SELECT id, username, email, role, locked FROM users ORDER BY id")
+        rows = cursor.fetchall()
+
+if not rows:
+    print("No users in users table")
 else:
-    conn = sqlite3.connect(db)
-    c = conn.cursor()
-    try:
-        c.execute('SELECT id, username, email, role, locked FROM users')
-        rows = c.fetchall()
-        if not rows:
-            print('No users in users table')
-        else:
-            for r in rows:
-                print(r)
-    except Exception as e:
-        print('Error querying users table:', e)
-    finally:
-        conn.close()
+    for row in rows:
+        print(row)

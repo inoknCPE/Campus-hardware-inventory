@@ -1,5 +1,7 @@
 import csv
 import sqlite3
+import psycopg
+import io
 from datetime import date
 from logger import logger
 from models.database import column_exists, get_db_connection, is_postgres_enabled, now_sql
@@ -120,9 +122,9 @@ class TrackerController:
                 conn.commit()
                 logger.info(f"New inventory item added: '{validated.item_name}'")
                 return True, "Item added successfully!"
-            except sqlite3.IntegrityError:
+            except (sqlite3.IntegrityError, psycopg.IntegrityError):
                 return False, f"Item '{validated.item_name}' already exists in the database!"
-            except sqlite3.Error as e:
+            except (sqlite3.Error, psycopg.Error) as e:
                 logger.error(f"Error adding item: {e}")
                 return False, "Database insertion failed."
 
@@ -133,7 +135,7 @@ class TrackerController:
                 cursor = conn.cursor()
                 cursor.execute("SELECT item_id, item_name, category, quantity, unit_price, status FROM hardware")
                 return cursor.fetchall()
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Failed to fetch records: {e}")
             return []
 
@@ -155,7 +157,7 @@ class TrackerController:
                 borrowed_quantity = int(cursor.fetchone()[0])
                 available_quantity = int(item[1])
                 return item[0], available_quantity, borrowed_quantity, available_quantity + borrowed_quantity
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Failed to fetch item quantity details: {e}")
             return None
 
@@ -182,7 +184,7 @@ class TrackerController:
                     sql += " WHERE " + " AND ".join(clauses)
                 cursor.execute(sql, tuple(params))
                 return cursor.fetchall()
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Search failed: {e}")
             return []
 
@@ -195,7 +197,7 @@ class TrackerController:
                 cursor.execute("SELECT DISTINCT category FROM hardware ORDER BY category")
                 rows = cursor.fetchall()
                 return [r[0] for r in rows]
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Failed to fetch categories: {e}")
             return []
 
@@ -207,22 +209,33 @@ class TrackerController:
                 cursor.execute("SELECT SUM(quantity * unit_price) FROM hardware")
                 result = cursor.fetchone()
                 return float(result[0]) if result and result[0] is not None else 0.0
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Failed to compute total inventory value: {e}")
             return 0.0
 
-    def export_to_csv(self, csv_path):
+    def export_to_csv_content(self):
         rows = self.fetch_all_items()
         if not rows:
             return False, "No inventory data available to export."
 
         try:
+            output = io.StringIO(newline="")
+            writer = csv.writer(output)
+            writer.writerow(["ID", "Name", "Category", "Quantity", "Unit Price", "Status"])
+            for row in rows:
+                writer.writerow(row)
+            return True, output.getvalue()
+        except (OSError, csv.Error) as e:
+            logger.error(f"CSV export failed: {e}")
+            return False, "Failed to generate CSV file."
+
+    def export_to_csv(self, csv_path):
+        ok, content = self.export_to_csv_content()
+        if not ok:
+            return False, content
+        try:
             with open(csv_path, mode="w", newline="", encoding="utf-8") as f:
-                writer = csv.writer(f)
-                writer.writerow(["ID", "Name", "Category", "Quantity", "Unit Price", "Status"])
-                for row in rows:
-                    writer.writerow(row)
-            logger.info(f"Inventory exported to CSV: {csv_path}")
+                f.write(content)
             return True, csv_path
         except OSError as e:
             logger.error(f"CSV export failed: {e}")
@@ -251,7 +264,7 @@ class TrackerController:
                 conn.commit()
             logger.info(f"Quantity updated for item ID {item_id} to {quantity}")
             return True, f"Quantity updated to '{quantity}'!"
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Error updating quantity: {e}")
             return False, "Failed to update quantity."
 
@@ -271,7 +284,7 @@ class TrackerController:
                 conn.commit()
             logger.info(f"Price updated for item ID {item_id} to {unit_price}")
             return True, f"Price updated to '{unit_price}'!"
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Error updating price: {e}")
             return False, "Failed to update price."
 
@@ -285,7 +298,7 @@ class TrackerController:
                 conn.commit()
             logger.info(f"Item ID {item_id} deleted.")
             return True, f"Item ID {item_id} removed!"
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Error deleting item: {e}")
             return False, "Failed to delete item."
 
@@ -313,9 +326,9 @@ class TrackerController:
 
                 cursor.execute(
                     "INSERT INTO borrow_records (student_name, student_id, borrow_date, class_name, schedule, room, status, requested_by) "
-                    "VALUES (?, ?, ?, ?, ?, ?, 'PENDING_BORROW', ?)", fields
+                    "VALUES (?, ?, ?, ?, ?, ?, 'PENDING_BORROW', ?)" + (" RETURNING borrow_id" if is_postgres_enabled() else ""), fields
                 )
-                borrow_id = cursor.lastrowid
+                borrow_id = cursor.fetchone()[0] if is_postgres_enabled() else cursor.lastrowid
                 for item_id, quantity in checked_items:
                     cursor.execute("INSERT INTO borrow_items (borrow_id, item_id, quantity) VALUES (?, ?, ?)",
                                    (borrow_id, item_id, quantity))
@@ -347,17 +360,17 @@ class TrackerController:
                     return False, f"Not enough stock for '{item[0]}'. Available: {item[1]}."
                 cursor.execute(
                     "INSERT INTO borrow_records (student_name, student_id, borrow_date, class_name, schedule, room, status, requested_by) "
-                    "VALUES (?, ?, ?, ?, ?, ?, 'PENDING_BORROW', ?)",
+                    "VALUES (?, ?, ?, ?, ?, ?, 'PENDING_BORROW', ?)" + (" RETURNING borrow_id" if is_postgres_enabled() else ""),
                     (username, username, date.today().isoformat(), "Inventory request", "Web", "Web", username),
                 )
-                borrow_id = cursor.lastrowid
+                borrow_id = cursor.fetchone()[0] if is_postgres_enabled() else cursor.lastrowid
                 cursor.execute(
                     "INSERT INTO borrow_items (borrow_id, item_id, quantity) VALUES (?, ?, ?)",
                     (borrow_id, item_id, quantity),
                 )
                 conn.commit()
             return True, f"Borrow request #{borrow_id} submitted for admin approval."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Borrow request failed: {e}")
             return False, "Failed to create borrow request."
 
@@ -418,7 +431,7 @@ class TrackerController:
                 cursor.execute("UPDATE borrow_records SET status = 'BORROWED' WHERE borrow_id = ?", (borrow_id,))
                 conn.commit()
             return True, f"Transaction #{borrow_id} approved. Inventory updated."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Approval failed: {e}")
             return False, "Failed to approve transaction."
 
@@ -433,7 +446,7 @@ class TrackerController:
                     return False, "Only pending transactions can be declined."
                 conn.commit()
             return True, f"Transaction #{borrow_id} declined."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Decline failed: {e}")
             return False, "Failed to decline transaction."
 
@@ -456,7 +469,7 @@ class TrackerController:
                 cursor.execute(f"UPDATE borrow_records SET status = 'RETURNED', returned_at = {now_sql()} WHERE borrow_id = ?", (borrow_id,))
                 conn.commit()
             return True, f"Transaction #{borrow_id} returned. Inventory updated."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Return failed: {e}")
             return False, "Failed to process return."
 
@@ -564,7 +577,7 @@ class TrackerController:
                     return False, "No eligible borrowed items were selected."
                 conn.commit()
             return True, "Return request submitted for admin approval."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Return request failed: {e}")
             return False, "Failed to create return request."
 
@@ -592,7 +605,7 @@ class TrackerController:
                 )
                 conn.commit()
             return True, "Return requests rejected; items remain borrowed."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Return rejection failed: {e}")
             return False, "Failed to reject return requests."
 
@@ -612,6 +625,6 @@ class TrackerController:
                 cursor.execute("UPDATE borrow_records SET status = 'RETURNED', returned_at = datetime('now') WHERE borrow_id = ?", (borrow_id,))
                 conn.commit()
             return True, f"Transaction #{borrow_id} returned and restocked."
-        except sqlite3.Error as e:
+        except (sqlite3.Error, psycopg.Error) as e:
             logger.error(f"Return approval failed: {e}")
             return False, "Failed to approve return."

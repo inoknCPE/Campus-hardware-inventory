@@ -20,7 +20,8 @@ from flask import (
     url_for,
     session,
     flash,
-    send_file
+    send_file,
+    Response
 )
 
 # Used to create login/admin protection decorators.
@@ -29,6 +30,7 @@ from functools import wraps
 # Used for environment variables and file paths.
 import os
 from datetime import date
+from flask_wtf.csrf import CSRFProtect
 
 # ==========================================================
 # 2. ENVIRONMENT / DATABASE SETUP
@@ -58,10 +60,14 @@ InventoryController = TrackerController(db_name="hardware_inventory.db")
 app = Flask(__name__, template_folder="html")
 
 # Secret key is required for Flask sessions.
-app.secret_key = os.environ.get(
-    "SECRET_KEY",
-    "lab1-development-secret-change-me"
+app.secret_key = os.environ["SECRET_KEY"]
+app.config.update(
+    SESSION_COOKIE_SECURE=bool(DATABASE_URL),
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
 )
+csrf = CSRFProtect(app)
+init_db()
 # ==========================================================
 # 4. LOGIN REQUIRED DECORATOR
 # ==========================================================
@@ -250,15 +256,7 @@ def register():
         ""
     ).strip()
 
-    role = request.form.get(
-        "role",
-        "USER"
-    ).strip().upper()
-
-    # Only USER and ADMIN are accepted.
-    if role not in ("USER", "ADMIN"):
-
-        role = "USER"
+    role = "USER"
 
     # Check required fields.
     if not username or not email or not password:
@@ -1008,46 +1006,14 @@ def admin_reset_action():
 @app.route("/export")
 @login_required
 def export():
-
-    # Create the CSV report using the existing controller.
-    ok, msg = InventoryController.export_to_csv(
-        os.path.abspath("inventory_report.csv")
-    )
-
-    # If export failed, return to dashboard.
+    ok, content = InventoryController.export_to_csv_content()
     if not ok:
-
-        flash(
-            msg,
-            "danger"
-        )
-
-        return redirect(
-            url_for("dashboard")
-        )
-
-    # Get the CSV file path.
-    path = os.path.abspath(
-        "inventory_report.csv"
-    )
-
-    # Make sure the file exists.
-    if not os.path.exists(path):
-
-        flash(
-            "The CSV report could not be found.",
-            "danger"
-        )
-
-        return redirect(
-            url_for("dashboard")
-        )
-
-    # Send the CSV file to the browser.
-    return send_file(
-        path,
-        as_attachment=True,
-        download_name="inventory_report.csv"
+        flash(content, "danger")
+        return redirect(url_for("dashboard"))
+    return Response(
+        content,
+        mimetype="text/csv",
+        headers={"Content-Disposition": "attachment; filename=inventory_report.csv"},
     )
 # ==========================================================
 # 20. LOGOUT
@@ -1070,10 +1036,6 @@ def logout():
 # 21. START THE FLASK WEB SERVER
 # ==========================================================
 if __name__ == "__main__":
-
-    # Initialize the existing database.
-    init_db()
-
     print()
     print("=" * 58)
     print(" CAMPUS HARDWARE INVENTORY - WEB PORTAL")
@@ -1089,4 +1051,4 @@ if __name__ == "__main__":
     print()
 
     # Start Flask.
-    app.run(debug=True)
+    app.run()
