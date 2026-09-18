@@ -1,16 +1,22 @@
-import sqlite3
+import argparse
+import os
 
-db='hardware_inventory.db'
-conn = sqlite3.connect(db)
-c = conn.cursor()
-try:
-    c.execute("UPDATE users SET role='admin' WHERE username = 'Admin'")
-    conn.commit()
-    c.execute('SELECT id, username, email, role, locked FROM users')
-    rows = c.fetchall()
-    for r in rows:
-        print(r)
-except Exception as e:
-    print('Error:', e)
-finally:
-    conn.close()
+import psycopg
+
+
+parser = argparse.ArgumentParser(description="Promote a user in PostgreSQL.")
+parser.add_argument("username")
+args = parser.parse_args()
+
+with psycopg.connect(os.environ["DATABASE_URL"]) as conn:
+    with conn.cursor() as cursor:
+        cursor.execute(
+            "UPDATE users SET role = 'ADMIN' WHERE username = %s RETURNING username",
+            (args.username,),
+        )
+        updated = cursor.fetchone()
+
+if updated:
+    print(f"Promoted {updated[0]} to ADMIN.")
+else:
+    print(f"No user found for username: {args.username}")

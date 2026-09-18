@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Campus Hardware Inventory{% endblock %}</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
@@ -28,6 +29,16 @@
         {% with messages = get_flashed_messages(with_categories=true) %}{% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}{% endwith %}
         {% block content %}{% endblock %}
     </main>
+    <script>
+        const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+        document.querySelectorAll('form[method="post" i]').forEach((form) => {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'csrf_token';
+            input.value = csrfToken;
+            form.prepend(input);
+        });
+    </script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>

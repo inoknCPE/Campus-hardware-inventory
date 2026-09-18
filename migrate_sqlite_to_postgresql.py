@@ -34,6 +34,7 @@ try:  # Starts the protected migration section.
             "new_password_hash TEXT NOT NULL",
             "status TEXT NOT NULL DEFAULT 'pending'",
             "created_at BIGINT NOT NULL",
+                "FOREIGN KEY (user_id) REFERENCES users(id)",
         ],
 
         "hardware": [  # Matches the SQLite hardware table.
@@ -63,6 +64,8 @@ try:  # Starts the protected migration section.
             "borrow_id BIGINT NOT NULL",
             "item_id BIGINT NOT NULL",
             "quantity INTEGER NOT NULL",
+            "FOREIGN KEY (borrow_id) REFERENCES borrow_records(borrow_id)",
+            "FOREIGN KEY (item_id) REFERENCES hardware(item_id)",
         ],
     }
 
@@ -72,7 +75,6 @@ try:  # Starts the protected migration section.
         pg_cur.execute(create_sql)
 
     counts = {}
-
     sqlite_table_map = {
         "users": "users",
         "password_reset_requests": "password_reset_requests",
