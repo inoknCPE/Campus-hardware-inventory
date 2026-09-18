@@ -288,6 +288,41 @@ class TrackerController:
             logger.error(f"Error updating price: {e}")
             return False, "Failed to update price."
 
+    def update_item(self, item_id, item_name, category, quantity, unit_price):
+        try:
+            validated = InventoryItemSchema(
+                item_name=item_name,
+                category=category,
+                quantity=quantity,
+                unit_price=unit_price,
+            )
+        except ValidationError as e:
+            return False, e.errors()[0]["msg"]
+
+        status = (
+            "In Stock"
+            if validated.quantity > 5
+            else "Low Stock"
+            if validated.quantity >= 1
+            else "Out of Stock"
+        )
+        try:
+            with self._connect() as conn:
+                cursor = conn.cursor()
+                cursor.execute(
+                    "UPDATE hardware SET item_name = ?, category = ?, quantity = ?, unit_price = ?, status = ? WHERE item_id = ?",
+                    (validated.item_name, validated.category, validated.quantity, validated.unit_price, status, item_id),
+                )
+                if cursor.rowcount == 0:
+                    return False, "Selected item does not exist."
+                conn.commit()
+            return True, "Item details updated successfully."
+        except (sqlite3.IntegrityError, psycopg.IntegrityError):
+            return False, f"Item '{validated.item_name}' already exists in the database."
+        except (sqlite3.Error, psycopg.Error) as e:
+            logger.error(f"Error updating item: {e}")
+            return False, "Failed to update item."
+
     def delete_item(self, item_id):
         try:
             with self._connect() as conn:

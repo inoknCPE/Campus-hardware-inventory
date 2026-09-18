@@ -829,6 +829,25 @@ def admin_add():
     )
 
     return redirect(url_for("hardware_management"))
+
+@app.route("/admin/edit/<int:item_id>", methods=["POST"])
+@admin_required
+def admin_edit(item_id):
+    try:
+        name = request.form.get("item_name", "").strip()
+        category = request.form.get("category", "").strip()
+        quantity = int(request.form.get("quantity", ""))
+        unit_price = float(request.form.get("unit_price", ""))
+    except ValueError:
+        flash("Quantity must be an integer and unit price must be numeric.", "danger")
+        return redirect(url_for("hardware_management"))
+
+    ok, msg = InventoryController.update_item(
+        item_id, name, category, quantity, unit_price
+    )
+    flash(msg, "success" if ok else "danger")
+    return redirect(url_for("hardware_management"))
+
 # ==========================================================
 # 15. ADMIN - DELETE HARDWARE
 # ==========================================================

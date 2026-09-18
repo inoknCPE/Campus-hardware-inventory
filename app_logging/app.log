@@ -1,0 +1,12 @@
+2026-09-18 22:12:28 - [ERROR] - AppLogger - Database setup error: failed to resolve host 'db.xdxwjjqmocvilsqkxpdr.supabase.co': [Errno 11001] getaddrinfo failed
+2026-09-18 22:13:59 - [ERROR] - AppLogger - Database setup error: failed to resolve host 'db.xdxwjjqmocvilsqkxpdr.supabase.co': [Errno 11001] getaddrinfo failed
+2026-09-18 22:14:53 - [ERROR] - AppLogger - Database setup error: failed to resolve host 'db.xdxwjjqmocvilsqkxpdr.supabase.co': [Errno 11001] getaddrinfo failed
+2026-09-18 22:16:56 - [ERROR] - AppLogger - Database setup error: failed to resolve host 'db.xdxwjjqmocvilsqkxpdr.supabase.co': [Errno 11001] getaddrinfo failed
+2026-09-18 22:20:43 - [INFO] - AppLogger - Database initialized successfully.
+2026-09-18 22:20:43 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-18 22:20:43 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-18 22:21:36 - [INFO] - werkzeug - 127.0.0.1 - - [18/Sep/2026 22:21:36] "GET / HTTP/1.1" 302 -
+2026-09-18 22:21:37 - [INFO] - werkzeug - 127.0.0.1 - - [18/Sep/2026 22:21:36] "GET /login HTTP/1.1" 200 -
+2026-09-18 22:21:37 - [INFO] - werkzeug - 127.0.0.1 - - [18/Sep/2026 22:21:37] "GET /static/js/app.js HTTP/1.1" 304 -
+2026-09-18 22:21:37 - [INFO] - werkzeug - 127.0.0.1 - - [18/Sep/2026 22:21:37] "GET /static/css/styles.css HTTP/1.1" 304 -
