@@ -316,6 +316,9 @@ def register():
         ""
     ).strip()
 
+    role = request.form.get("role", "user").strip().lower()
+    admin_code = request.form.get("admin_code", "")
+
     # Check required fields.
     if not username or not email or not password:
 
@@ -326,10 +329,20 @@ def register():
 
         return redirect(url_for("register"))
 
+    if role not in {"user", "admin"}:
+        flash("Choose a valid account type.", "danger")
+        return redirect(url_for("register"))
+
+    if role == "admin":
+        expected_admin_code = os.getenv("ADMIN_REGISTRATION_CODE", "")
+        if not expected_admin_code or not hmac.compare_digest(admin_code, expected_admin_code):
+            flash("A valid admin invite code is required for Admin accounts.", "danger")
+            return redirect(url_for("register"))
+
     session.pop("otp_challenge_id", None)
     if not create_otp_challenge(
         "register",
-        {"username": username, "email": email, "password": password, "role": "USER"},
+        {"username": username, "email": email, "password": password, "role": role},
         "Account registration",
     ):
         flash("Unable to send a verification code. Check the email settings and try again.", "danger")
