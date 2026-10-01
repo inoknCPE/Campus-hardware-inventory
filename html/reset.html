@@ -7,7 +7,7 @@
         <label>Email<input type="email" name="email" required autocomplete="email"></label>
         <label>New password<span class="password-field"><input id="reset-password" type="password" name="new_password" required minlength="8" autocomplete="new-password"><button class="password-toggle" type="button" aria-controls="reset-password" aria-label="Show password" title="Show password"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" fill="none" stroke="currentColor" stroke-width="1.8"></path><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle></svg></button></span></label>
         <label>Confirm new password<span class="password-field"><input id="reset-confirm-password" type="password" name="confirm_password" required minlength="8" autocomplete="new-password"><button class="password-toggle" type="button" aria-controls="reset-confirm-password" aria-label="Show password" title="Show password"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" fill="none" stroke="currentColor" stroke-width="1.8"></path><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle></svg></button></span></label>
-        <button type="submit">Submit reset request</button>
+        <button type="submit">Send Verification Code</button>
     </form>
     <p><a href="{{ url_for('login') }}">Back to sign in</a></p>
 </div></div>{% endblock %}

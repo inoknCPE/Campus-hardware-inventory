@@ -26,9 +26,12 @@ from flask import (
 
 # Used to create login/admin protection decorators.
 from functools import wraps
-
-# Used for environment variables and file paths.
+from email.message import EmailMessage
+import hmac
 import os
+import secrets
+import smtplib
+import time
 from datetime import date
 from flask_wtf.csrf import CSRFProtect
 
@@ -68,6 +71,63 @@ app.config.update(
 )
 csrf = CSRFProtect(app)
 init_db()
+
+SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp-relay.brevo.com")
+SMTP_PORT = int(os.getenv("SMTP_PORT", "2525"))
+SMTP_LOGIN = os.getenv("SMTP_LOGIN", "")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
+SMTP_FROM = os.getenv("SMTP_FROM", SMTP_LOGIN)
+OTP_TTL_SECONDS = 600
+OTP_MAX_ATTEMPTS = 5
+pending_otp_challenges = {}
+
+
+def send_otp_email(receiver_email, otp, intent):
+    if not SMTP_LOGIN or not SMTP_PASSWORD or not SMTP_FROM:
+        app.logger.error("OTP email is not configured; set SMTP_LOGIN, SMTP_PASSWORD, and SMTP_FROM.")
+        return False
+
+    message = EmailMessage()
+    message["Subject"] = f"Campus Hardware Inventory - {intent} verification"
+    message["From"] = SMTP_FROM
+    message["To"] = receiver_email
+    message.set_content(
+        f"Your {intent.lower()} verification code is {otp}. "
+        "It expires in 10 minutes. Do not share this code."
+    )
+
+    try:
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=15) as server:
+            server.starttls()
+            server.login(SMTP_LOGIN, SMTP_PASSWORD)
+            server.send_message(message)
+        return True
+    except (OSError, smtplib.SMTPException):
+        app.logger.exception("Failed to send OTP email.")
+        return False
+
+
+def create_otp_challenge(action, data, intent):
+    now = time.time()
+    for expired_id, challenge in list(pending_otp_challenges.items()):
+        if now >= challenge["expires_at"]:
+            pending_otp_challenges.pop(expired_id, None)
+
+    challenge_id = secrets.token_urlsafe(32)
+    otp = f"{secrets.randbelow(1_000_000):06d}"
+    pending_otp_challenges[challenge_id] = {
+        "action": action,
+        "data": data,
+        "otp": otp,
+        "expires_at": time.time() + OTP_TTL_SECONDS,
+        "attempts": 0,
+    }
+    if not send_otp_email(data["email"], otp, intent):
+        pending_otp_challenges.pop(challenge_id, None)
+        return False
+
+    session["otp_challenge_id"] = challenge_id
+    return True
 # ==========================================================
 # 4. LOGIN REQUIRED DECORATOR
 # ==========================================================
@@ -256,8 +316,6 @@ def register():
         ""
     ).strip()
 
-    role = "USER"
-
     # Check required fields.
     if not username or not email or not password:
 
@@ -266,27 +324,19 @@ def register():
             "danger"
         )
 
-        return redirect(
-            url_for("login")
-        )
+        return redirect(url_for("register"))
 
-    # Use the original registration function.
-    ok, msg = AuthController.register_user(
-        username,
-        email,
-        password,
-        role=role
-    )
+    session.pop("otp_challenge_id", None)
+    if not create_otp_challenge(
+        "register",
+        {"username": username, "email": email, "password": password, "role": "USER"},
+        "Account registration",
+    ):
+        flash("Unable to send a verification code. Check the email settings and try again.", "danger")
+        return redirect(url_for("register"))
 
-    # Show the result.
-    flash(
-        msg,
-        "success" if ok else "warning"
-    )
-
-    return redirect(
-        url_for("login")
-    )
+    flash("A 6-digit verification code was sent to your email.", "info")
+    return redirect(url_for("verify_otp", action="register"))
 # ==========================================================
 # 9. PASSWORD RESET REQUEST
 # ==========================================================
@@ -337,9 +387,7 @@ def reset_request():
             "danger"
         )
 
-        return redirect(
-            url_for("login")
-        )
+        return redirect(url_for("reset_request"))
 
     # Check if passwords match.
     if new_password != confirm_password:
@@ -349,27 +397,72 @@ def reset_request():
             "danger"
         )
 
-        return redirect(
-            url_for("login")
-        )
+        return redirect(url_for("reset_request"))
 
-    # Use the original password reset function.
-    ok, msg = (
-        AuthController.submit_password_reset_request(
-            username,
-            email,
-            new_password
-        )
-    )
+    user_info = AuthController.get_user_info(username)
+    if not user_info or user_info.get("email", "").casefold() != email.casefold():
+        flash("No account found matching that username and email.", "danger")
+        return redirect(url_for("reset_request"))
 
-    flash(
-        msg,
-        "success" if ok else "danger"
-    )
+    session.pop("otp_challenge_id", None)
+    if not create_otp_challenge(
+        "reset",
+        {"username": username, "email": email, "new_password": new_password},
+        "Password reset",
+    ):
+        flash("Unable to send a verification code. Check the email settings and try again.", "danger")
+        return redirect(url_for("reset_request"))
 
-    return redirect(
-        url_for("login")
-    )
+    flash("A 6-digit verification code was sent to your email.", "info")
+    return redirect(url_for("verify_otp", action="reset"))
+
+
+@app.route("/verify-otp/<action>", methods=["GET", "POST"])
+def verify_otp(action):
+    if action not in {"register", "reset"}:
+        return redirect(url_for("login"))
+
+    challenge_id = session.get("otp_challenge_id")
+    challenge = pending_otp_challenges.get(challenge_id)
+    if not challenge or challenge["action"] != action:
+        session.pop("otp_challenge_id", None)
+        flash("Verification session expired. Please try again.", "warning")
+        return redirect(url_for("register" if action == "register" else "reset_request"))
+
+    if time.time() >= challenge["expires_at"] or challenge["attempts"] >= OTP_MAX_ATTEMPTS:
+        pending_otp_challenges.pop(challenge_id, None)
+        session.pop("otp_challenge_id", None)
+        flash("Verification code expired. Please request a new one.", "warning")
+        return redirect(url_for("register" if action == "register" else "reset_request"))
+
+    if request.method == "POST":
+        user_otp = request.form.get("otp_code", "").strip()
+        if not user_otp.isascii() or not user_otp.isdigit() or not hmac.compare_digest(user_otp, challenge["otp"]):
+            challenge["attempts"] += 1
+            if challenge["attempts"] >= OTP_MAX_ATTEMPTS:
+                pending_otp_challenges.pop(challenge_id, None)
+                session.pop("otp_challenge_id", None)
+                flash("Too many invalid codes. Please request a new one.", "warning")
+                return redirect(url_for("register" if action == "register" else "reset_request"))
+            flash("Invalid verification code.", "danger")
+            return render_template("otp_verify.html", action=action)
+
+        pending_otp_challenges.pop(challenge_id, None)
+        session.pop("otp_challenge_id", None)
+        data = challenge["data"]
+        if action == "register":
+            ok, msg = AuthController.register_user(
+                data["username"], data["email"], data["password"], role=data["role"]
+            )
+        else:
+            ok, msg = AuthController.submit_password_reset_request(
+                data["username"], data["email"], data["new_password"]
+            )
+
+        flash(msg, "success" if ok else "danger")
+        return redirect(url_for("login"))
+
+    return render_template("otp_verify.html", action=action)
 # ==========================================================
 # 10. DASHBOARD ROUTE
 # ==========================================================
